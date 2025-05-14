@@ -151,7 +151,12 @@ h2 {
       display: inline-block;
     }
   }
+
+  .social {
+    padding: 11px 58px;
+  }
 }
+/* Soluzioni per il tablet da 998px  a salire */
 
 @media screen and (min-width: 998px) {
   .container {
@@ -161,6 +166,7 @@ h2 {
   }
 
   .social {
+    padding: 11px 13px;
     p {
       display: inline-block;
     }
