@@ -112,7 +112,7 @@ ul {
 
 /* banner */
 
-figure {
+.banner {
   display: none;
 }
 
@@ -142,7 +142,7 @@ h2 {
 
   main {
     span,
-    figure {
+    .banner {
       display: inline-block;
     }
 
