@@ -227,4 +227,10 @@ h2 {
       display: inline-block;
     }
   }
+
+  img.pre {
+    width: 50%;
+    float: left;
+    margin-right: 15px;
+  }
 }
