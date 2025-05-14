@@ -66,12 +66,23 @@ h1 {
 
 /* #region main */
 
-/* section video */
+/* #region section video */
 
 span {
   visibility: hidden;
 }
 
+/* ma questa è una buona soluzione ? */
+ul {
+  list-style: none;
+}
+/* #endregion section video */
+
+/* banner */
+
+figure {
+  visibility: hidden;
+}
 /* #endregion main */
 
 /* #region @media */
@@ -85,8 +96,13 @@ span {
   }
 
   main {
-    span {
+    span,
+    figure {
       visibility: visible;
+    }
+
+    ul {
+      display: flex;
     }
   }
 }
