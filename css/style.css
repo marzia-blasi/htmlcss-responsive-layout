@@ -1,11 +1,5 @@
 /* debug*/
 
-.debug {
-  * {
-    border: dotted rgba(128, 128, 128, 0.397);
-  }
-}
-
 /* #region Utilities  */
 
 /* reset */
@@ -51,6 +45,7 @@ img {
 /* #region header  */
 header {
   background-color: var(--header-background);
+  margin-bottom: 10px;
 
   .container {
     display: flex;
@@ -68,17 +63,21 @@ h1 {
 
 /* #region main */
 
-/* #region section video */
+/* section video */
 
 .video {
-  background-color: var(--header-background);
   h4 {
     color: var(--text-light);
     font-weight: lighter;
+    margin: 10px 0;
   }
 
   h3 {
     color: var(--text-dark);
+    margin: 10px 0;
+  }
+  .container-sm {
+    background-color: var(--header-background);
   }
 }
 
@@ -86,25 +85,26 @@ span {
   display: none;
 }
 
-/* ma questa è una buona soluzione ? */
+/* ma questa è una buona soluzione ? OVVIAMENTE NO*/
 ul {
   list-style: none;
 }
-/* #endregion section video */
+/* section video */
 
 /* social  */
 
-#social {
-  .container {
+.container {
+  .d-flex {
     justify-content: space-between;
+    margin: 30px 0;
   }
 }
 
 .social {
   background-color: var(--header-background);
   display: inline-block;
-  border-radius: 40%;
-  padding: 1px 2px;
+  border-radius: 22px 22px;
+  padding: 11px 13px;
   p {
     display: none;
   }
@@ -134,6 +134,10 @@ h2 {
 
 /* Soluzioni per il tablet da 768px  a salire */
 @media screen and (min-width: 768px) {
+  .container {
+    width: 85%;
+    max-width: 745px;
+  }
   header {
     .container {
       justify-content: flex-start;
@@ -145,20 +149,18 @@ h2 {
     .banner {
       display: inline-block;
     }
+  }
+}
 
-    ul {
-      display: flex;
-    }
-
-    .social {
-      p {
-        display: inline-block;
-      }
-    }
+@media screen and (min-width: 998px) {
+  .container {
+    width: 90%;
+    max-width: 900px;
   }
 
-  .container {
-    width: 80%;
-    min-width: 800px;
+  .social {
+    p {
+      display: inline-block;
+    }
   }
 }
