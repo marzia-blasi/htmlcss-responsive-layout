@@ -1,7 +1,13 @@
-/* debug */
+/* debug*/
 
 .debug {
-  background-color: rgb(151, 181, 206);
+  * {
+    border: dotted rgba(128, 128, 128, 0.397);
+  }
+
+  main {
+    background-color: #94aecf;
+  }
 }
 
 /* #region Utilities  */
@@ -13,17 +19,57 @@
   padding: 0;
 }
 
-/* #endregion utilities */
-
-/* #region colors and fonts*/
-
-:root {
-  --header-cl: #ff9614;
+body {
+  background-color: var(--body-cl);
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+.container {
+  width: 95%;
+  max-width: 800px;
 }
 
-/* #endregion colors and fonts*/
+img {
+  width: 100%;
+}
+
+/* #endregion utilities */
+
+/* #region colors*/
+
+:root {
+  --header-text-cl: #ff9614;
+  --header-background: white;
+  --body-cl: #f6f5f3;
+  --text-light: grey;
+}
+
+/* #endregion colors*/
+
+/* #region header  */
+header {
+  background-color: var(--header-background);
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 h1 {
-  color: var(--header-cl);
+  color: var(--header-text-cl);
   font-family: "Nerko One", cursive;
+  font-size: 3rem;
+}
+
+/* #endregion header */
+
+/* #region @media */
+
+/* Soluzioni per il tablet da 768px  a salire */
+@media screen and (min-width: 768px) {
+  header {
+    .container {
+      justify-content: flex-start;
+    }
+  }
 }
