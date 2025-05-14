@@ -79,17 +79,15 @@ h1 {
   .container-sm {
     background-color: var(--header-background);
   }
+
+  .col {
+    width: 100%;
+  }
 }
 
 span {
   display: none;
 }
-
-/* ma questa è una buona soluzione ? OVVIAMENTE NO*/
-ul {
-  list-style: none;
-}
-/* section video */
 
 /* social  */
 
@@ -153,7 +151,7 @@ h2 {
   }
 
   .social {
-    padding: 11px 58px;
+    padding: 11px 50px;
   }
 }
 /* Soluzioni per il tablet da 998px  a salire */
