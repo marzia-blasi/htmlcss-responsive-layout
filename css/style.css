@@ -4,10 +4,6 @@
   * {
     border: dotted rgba(128, 128, 128, 0.397);
   }
-
-  main {
-    background-color: #94aecf;
-  }
 }
 
 /* #region Utilities  */
@@ -73,6 +69,10 @@ h1 {
 
 /* #region section video */
 
+.video {
+  background-color: var(--header-background);
+}
+
 span {
   visibility: hidden;
 }
@@ -98,7 +98,7 @@ ul {
 /* banner */
 
 figure {
-  visibility: hidden;
+  display: none;
 }
 
 /* #region presentation  */
@@ -123,11 +123,17 @@ hr {
   main {
     span,
     figure {
-      visibility: visible;
+      display: inline-block;
     }
 
     ul {
       display: flex;
+    }
+
+    .social {
+      p {
+        display: inline-block;
+      }
     }
   }
 }
