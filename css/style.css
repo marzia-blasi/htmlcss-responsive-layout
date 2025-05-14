@@ -23,6 +23,11 @@ body {
   background-color: var(--body-cl);
   font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
+
+section {
+  margin: 0 16px;
+}
+
 .container {
   width: 95%;
   max-width: 800px;
@@ -78,11 +83,27 @@ ul {
 }
 /* #endregion section video */
 
+/* social  */
+
+.social {
+  background-color: var(--header-background);
+  display: inline-block;
+  border-radius: ;
+}
+
 /* banner */
 
 figure {
   visibility: hidden;
 }
+
+/* #region presentation  */
+hr {
+  color: var(--header-text-cl);
+  width: 40px;
+}
+/* #endregion presentation */
+
 /* #endregion main */
 
 /* #region @media */
