@@ -1,0 +1,29 @@
+/* debug */
+
+.debug {
+  background-color: rgb(151, 181, 206);
+}
+
+/* #region Utilities  */
+
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* #endregion utilities */
+
+/* #region colors and fonts*/
+
+:root {
+  --header-cl: #ff9614;
+}
+
+/* #endregion colors and fonts*/
+
+h1 {
+  color: var(--header-cl);
+  font-family: "Nerko One", cursive;
+}
