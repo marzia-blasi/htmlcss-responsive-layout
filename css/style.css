@@ -63,6 +63,16 @@ h1 {
 
 /* #endregion header */
 
+/* #region main */
+
+/* section video */
+
+span {
+  visibility: hidden;
+}
+
+/* #endregion main */
+
 /* #region @media */
 
 /* Soluzioni per il tablet da 768px  a salire */
@@ -71,5 +81,9 @@ h1 {
     .container {
       justify-content: flex-start;
     }
+  }
+
+  span {
+    visibility: visible;
   }
 }
